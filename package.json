@@ -1,0 +1,18 @@
+{
+  "name": "project-management-system",
+  "version": "1.0.0",
+  "description": "Project Management System - Module 1: Project Initiation & Integration Management",
+  "private": true,
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm --prefix client run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install-all": "npm install && npm --prefix server install && npm --prefix client install",
+    "seed": "node server/utils/seedData.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,2302 @@
+{
+  "metadata": {
+    "system": "Project Management Information System (PMIS)",
+    "course": "CSE-494 Software Project Management",
+    "institution": "COMSATS University Islamabad",
+    "backupTimestamp": "2026-10-30T05:00:52.455Z",
+    "version": "1.0.0",
+    "totalCollections": 12
+  },
+  "counts": {
+    "projects": 3,
+    "teamMembers": 7,
+    "milestones": 5,
+    "requirements": 19,
+    "wbsNodes": 11,
+    "activities": 23,
+    "costEntries": 10,
+    "changeRequests": 1,
+    "defects": 4,
+    "qualityInspections": 1,
+    "risks": 6,
+    "auditLogs": 2
+  },
+  "projects": [
+    {
+      "_id": "6ae42451a3827fb3f34ef4c6",
+      "name": "Smart Healthcare PMS (5 Hospitals Network)",
+      "code": "PRJ-HEALTH",
+      "description": "Centralized hospital management system across 5 regional hospitals network",
+      "status": "Executing",
+      "statusDate": "2026-12-28",
+      "charter": {
+        "objectives": [
+          "Deploy centralized multi-hospital patient appointment scheduling",
+          "Integrate electronic laboratory reports across all 5 network hospitals",
+          "Coordinate real-time doctor shifts, consultations, and tele-health",
+          "Streamline hospital billing, insurance reconciliation, and invoicing"
+        ],
+        "stakeholders": [
+          {
+            "name": "Dr. Tariq Mahmood",
+            "role": "Hospital Board Chairman",
+            "influence": "High",
+            "interest": "High"
+          },
+          {
+            "name": "Dr. Ayesha Malik",
+            "role": "Chief Medical Officer",
+            "influence": "High",
+            "interest": "High"
+          },
+          {
+            "name": "Babar Azam",
+            "role": "Hospital IT Director",
+            "influence": "High",
+            "interest": "Medium"
+          },
+          {
+            "name": "Sara Khan",
+            "role": "Finance & Invoicing Lead",
+            "influence": "Medium",
+            "interest": "High"
+          }
+        ],
+        "scopeIn": [
+          "Patient Appointments Module",
+          "Laboratory Reports Module",
+          "Doctor Schedules Module",
+          "Online Consultations Module",
+          "Hospital Billing Module",
+          "Testing & System Acceptance"
+        ],
+        "scopeOut": [
+          "Procurement of hospital server racks or localized biometric hardware",
+          "Direct pharmacy physical vending machines"
+        ],
+        "approvedBudget": 5800000,
+        "deadline": "2027-02-22",
+        "startDate": "2026-11-02",
+        "sponsor": "Hospital Consortium Executive Board"
+      },
+      "plan": {
+        "scopeStatement": "Comprehensive Software Project Management System for 5 hospitals consortium delivering 6 core modules.",
+        "scheduleSummary": "16 weeks delivery schedule from 2026-11-02 to 2027-02-20.",
+        "costPlan": {
+          "bac": 5800000,
+          "authorizedBudget": 5800000
+        },
+        "qualityPlan": {
+          "standards": [
+            "ISO/IEC 25010 Software Quality Standard",
+            "HIPAA Privacy Safeguards"
+          ],
+          "defectPolicy": "Zero critical or major defects permitted at milestone release gates."
+        }
+      },
+      "thresholds": {
+        "cpiWarning": 0.95,
+        "cpiCritical": 0.85,
+        "spiWarning": 0.95,
+        "spiCritical": 0.85,
+        "maxOpenCriticalDefects": 0
+      },
+      "baselines": [
+        {
+          "version": "v1",
+          "budget": 5000000,
+          "finishDate": "2027-02-20",
+          "createdFromChangeRequest": null,
+          "createdAt": "2026-11-02T00:00:00.000Z"
+        },
+        {
+          "version": "v2",
+          "budget": 5800000,
+          "finishDate": "2027-02-22",
+          "createdFromChangeRequest": "CR-001",
+          "createdAt": "2026-10-30T05:00:02.943Z"
+        }
+      ],
+      "closure": {
+        "isClosed": false,
+        "lessonsLearned": "",
+        "checklist": []
+      },
+      "createdAt": "2026-10-30T05:00:01.119Z",
+      "updatedAt": "2026-10-30T05:00:02.957Z",
+      "__v": 1
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef544",
+      "name": "Dental Clinic Patient EHR Portal",
+      "code": "PRJ-DENTAL",
+      "description": "Cloud-based electronic dental records and clinic appointment booking portal",
+      "status": "Planning",
+      "statusDate": "2027-01-05",
+      "charter": {
+        "objectives": [
+          "Build digital dental chart and tooth-surface examination records",
+          "Enable online patient appointment booking and SMS confirmations",
+          "Integrate digital X-ray image archiving and billing reconciliation"
+        ],
+        "stakeholders": [
+          {
+            "name": "Dr. Kamran Qureshi",
+            "role": "Clinical Director",
+            "influence": "High",
+            "interest": "High"
+          },
+          {
+            "name": "Nadia Hussain",
+            "role": "Operations Lead",
+            "influence": "Medium",
+            "interest": "High"
+          }
+        ],
+        "scopeIn": [
+          "Dental Clinical Records & Odontogram",
+          "Patient Online Scheduling",
+          "Invoice & Panel Payment Integration"
+        ],
+        "scopeOut": [
+          "Direct connection to hardware 3D dental milling units"
+        ],
+        "approvedBudget": 3500000,
+        "deadline": "2027-04-30",
+        "startDate": "2027-01-05",
+        "sponsor": "Metropolitan Dental Healthcare Group"
+      },
+      "plan": {
+        "scopeStatement": "Comprehensive dental EHR and patient booking portal for private clinics network.",
+        "scheduleSummary": "12 weeks iterative delivery schedule.",
+        "costPlan": {
+          "bac": 3500000,
+          "authorizedBudget": 3500000
+        },
+        "qualityPlan": {
+          "standards": [
+            "ISO 27001 Data Security Standards"
+          ],
+          "defectPolicy": "Zero critical defects permitted at release gates."
+        }
+      },
+      "thresholds": {
+        "cpiWarning": 0.95,
+        "cpiCritical": 0.85,
+        "spiWarning": 0.95,
+        "spiCritical": 0.85,
+        "maxOpenCriticalDefects": 0
+      },
+      "baselines": [
+        {
+          "version": "v1",
+          "budget": 3500000,
+          "finishDate": "2027-04-30",
+          "createdFromChangeRequest": null,
+          "createdAt": "2027-01-05T00:00:00.000Z"
+        }
+      ],
+      "closure": {
+        "isClosed": false,
+        "lessonsLearned": "",
+        "checklist": []
+      },
+      "createdAt": "2026-10-30T05:00:01.768Z",
+      "updatedAt": "2026-10-30T05:00:01.768Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42453a3827fb3f34ef5d0",
+      "name": "Fintech Mobile Banking App",
+      "code": "PRJ-FINTECH",
+      "description": "Enterprise software project managed in SPM",
+      "status": "Planning",
+      "statusDate": "2026-10-30",
+      "charter": {
+        "objectives": [
+          "Successfully deliver project scope on schedule and within budget"
+        ],
+        "stakeholders": [
+          {
+            "name": "Islamic Financial Services Group",
+            "role": "Project Sponsor",
+            "influence": "High",
+            "interest": "High"
+          }
+        ],
+        "scopeIn": [
+          "Core software modules architecture and implementation",
+          "System testing and release deployment"
+        ],
+        "scopeOut": [
+          "Client on-premise third-party hardware maintenance"
+        ],
+        "approvedBudget": 6000000,
+        "deadline": "2027-08-31",
+        "startDate": "2026-10-30",
+        "sponsor": "Islamic Financial Services Group"
+      },
+      "plan": {
+        "scopeStatement": "Development and deployment of Fintech Mobile Banking App",
+        "scheduleSummary": "Structured iterative development lifecycle",
+        "costPlan": {
+          "bac": 6000000,
+          "authorizedBudget": 6000000
+        },
+        "qualityPlan": {
+          "standards": [
+            "ISO/IEC 25010 Software Quality Standards"
+          ],
+          "defectPolicy": "Zero critical defects permitted at release gates"
+        }
+      },
+      "thresholds": {
+        "cpiWarning": 0.95,
+        "cpiCritical": 0.85,
+        "spiWarning": 0.95,
+        "spiCritical": 0.85,
+        "maxOpenCriticalDefects": 0
+      },
+      "baselines": [
+        {
+          "version": "v1",
+          "budget": 6000000,
+          "finishDate": "2027-08-31",
+          "createdFromChangeRequest": null,
+          "createdAt": "2026-10-30T05:00:03.177Z"
+        }
+      ],
+      "closure": {
+        "isClosed": false,
+        "lessonsLearned": "",
+        "checklist": []
+      },
+      "createdAt": "2026-10-30T05:00:03.195Z",
+      "updatedAt": "2026-10-30T05:00:03.195Z",
+      "__v": 0
+    }
+  ],
+  "teamMembers": [
+    {
+      "_id": "6ae42451a3827fb3f34ef4be",
+      "name": "Dr. Zeeshan Ali (PM)",
+      "role": "Project Manager",
+      "dailyRate": 7500,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.056Z",
+      "updatedAt": "2026-10-30T05:00:01.056Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4bf",
+      "name": "Hamza Tariq",
+      "role": "Backend Developer",
+      "dailyRate": 5500,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.056Z",
+      "updatedAt": "2026-10-30T05:00:01.056Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4c0",
+      "name": "Bilal Khan",
+      "role": "Backend Developer",
+      "dailyRate": 5500,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.056Z",
+      "updatedAt": "2026-10-30T05:00:01.056Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4c1",
+      "name": "Usman Farooq",
+      "role": "Frontend Developer",
+      "dailyRate": 5000,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.057Z",
+      "updatedAt": "2026-10-30T05:00:01.057Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4c2",
+      "name": "Mariam Sajid",
+      "role": "Frontend Developer",
+      "dailyRate": 5000,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.057Z",
+      "updatedAt": "2026-10-30T05:00:01.057Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4c3",
+      "name": "Asad Rauf",
+      "role": "Database Developer",
+      "dailyRate": 5200,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.057Z",
+      "updatedAt": "2026-10-30T05:00:01.057Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4c4",
+      "name": "Zainab Qureshi",
+      "role": "Quality Assurance Engineer",
+      "dailyRate": 4800,
+      "capacityPerDay": 8,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.057Z",
+      "updatedAt": "2026-10-30T05:00:01.057Z"
+    }
+  ],
+  "milestones": [
+    {
+      "_id": "6ae42451a3827fb3f34ef4c8",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "name": "M1: Charter & Architectural Foundation",
+      "targetDate": "2026-11-20",
+      "forecastDate": "2026-11-20",
+      "status": "Achieved",
+      "owner": "Project Manager",
+      "linkedActivityIds": [],
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.195Z",
+      "updatedAt": "2026-10-30T05:00:01.195Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4c9",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "name": "M2: Core Appointments & Record System",
+      "targetDate": "2026-12-25",
+      "forecastDate": "2027-01-08",
+      "status": "Delayed",
+      "owner": "Backend Lead",
+      "linkedActivityIds": [],
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.196Z",
+      "updatedAt": "2026-10-30T05:00:01.196Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4ca",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "name": "M3: Laboratory & Doctor Scheduling",
+      "targetDate": "2027-01-22",
+      "forecastDate": "2027-01-29",
+      "status": "Pending",
+      "owner": "Full-stack Team",
+      "linkedActivityIds": [],
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.196Z",
+      "updatedAt": "2026-10-30T05:00:01.196Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4cb",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "name": "M4: Online Consultations & Billing",
+      "targetDate": "2027-02-05",
+      "forecastDate": "2027-02-12",
+      "status": "Pending",
+      "owner": "Full-stack Team",
+      "linkedActivityIds": [],
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.197Z",
+      "updatedAt": "2026-10-30T05:00:01.197Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4cc",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "name": "M5: System Acceptance & Hospital Sign-off",
+      "targetDate": "2027-02-20",
+      "forecastDate": "2027-03-05",
+      "status": "Pending",
+      "owner": "Project Manager",
+      "linkedActivityIds": [],
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.197Z",
+      "updatedAt": "2026-10-30T05:00:01.197Z"
+    }
+  ],
+  "requirements": [
+    {
+      "_id": "6ae42451a3827fb3f34ef4ce",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-001",
+      "title": "Patient Multi-Hospital Slot Booking",
+      "description": "Enable patients to book in-person and digital appointment slots.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Appointments",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.301Z",
+      "updatedAt": "2026-10-30T05:00:01.301Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4cf",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-002",
+      "title": "Concurrency Control & Conflict Prevention",
+      "description": "Prevent double-booking of doctors across hospital branches.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Appointments",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.301Z",
+      "updatedAt": "2026-10-30T05:00:01.301Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d0",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-003",
+      "title": "Automated SMS and Email Reminders",
+      "description": "Trigger appointment reminder notifications 24h prior.",
+      "type": "Functional",
+      "priority": "Should have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Appointments",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.301Z",
+      "updatedAt": "2026-10-30T05:00:01.301Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d1",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-004",
+      "title": "Laboratory Diagnostic Test Upload",
+      "description": "Secure upload of PDF and numerical lab test results by technicians.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Laboratory",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d2",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-005",
+      "title": "Patient Medical Record (EHR) Linkage",
+      "description": "Link laboratory results directly to patient unique health ID.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Laboratory",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d3",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-006",
+      "title": "Critical Value Alert for Physicians",
+      "description": "Highlight panic test results to the attending doctor immediately.",
+      "type": "Functional",
+      "priority": "Should have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Laboratory",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d4",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-007",
+      "title": "Doctor Shift & Roster Management",
+      "description": "Allow hospital admins to schedule doctor OPD and on-call shifts.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Doctor Schedules",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d5",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-008",
+      "title": "Leave and Emergency Cover Allocation",
+      "description": "Reassign appointments when a doctor applies for sudden leave.",
+      "type": "Functional",
+      "priority": "Should have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Doctor Schedules",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d6",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-009",
+      "title": "Video Tele-Consultation Stream",
+      "description": "WebRTC end-to-end encrypted video consultation room.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Online Consultations",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d7",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-010",
+      "title": "Digital E-Prescription Generation",
+      "description": "Doctors create and sign digital prescriptions during consultations.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Online Consultations",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d8",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-011",
+      "title": "Consolidated Hospital Invoicing",
+      "description": "Generate itemized bills covering OPD, lab tests, and doctor fees.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Hospital Billing",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4d9",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-012",
+      "title": "Insurance Policy Verification & Copay",
+      "description": "Automate panel insurance deductibles calculation.",
+      "type": "Functional",
+      "priority": "Should have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Hospital Billing",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4da",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-013",
+      "title": "HIPAA & GDPR Compliance",
+      "description": "End-to-end data encryption at rest (AES-256) and in transit (TLS 1.3).",
+      "type": "Non-Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Security",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4db",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-014",
+      "title": "High Availability & 99.9% Uptime",
+      "description": "System must sustain 5,000 concurrent hospital queries.",
+      "type": "Non-Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Architecture",
+      "changeRequestId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.302Z",
+      "updatedAt": "2026-10-30T05:00:01.302Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4dc",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-AI-01",
+      "title": "AI Symptom Preliminary Diagnosis",
+      "description": "Machine learning preliminary risk score before consultation.",
+      "type": "Functional",
+      "priority": "Could have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "AI Diagnosis",
+      "changeRequestId": "6ae42451a3827fb3f34ef538",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.303Z",
+      "updatedAt": "2026-10-30T05:00:02.718Z",
+      "approvedAt": "2026-10-30T05:00:02.715Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4dd",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-AI-02",
+      "title": "Clinical Recommendation Assistant",
+      "description": "Suggest differential diagnostic considerations to physicians.",
+      "type": "Functional",
+      "priority": "Could have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "AI Diagnosis",
+      "changeRequestId": "6ae42451a3827fb3f34ef538",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.303Z",
+      "updatedAt": "2026-10-30T05:00:02.736Z",
+      "approvedAt": "2026-10-30T05:00:02.734Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4de",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-MOB-01",
+      "title": "Native iOS & Android Patient Portal",
+      "description": "Mobile app for bookings, report viewing and video calls.",
+      "type": "Functional",
+      "priority": "Should have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Mobile App",
+      "changeRequestId": "6ae42451a3827fb3f34ef538",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.303Z",
+      "updatedAt": "2026-10-30T05:00:02.745Z",
+      "approvedAt": "2026-10-30T05:00:02.743Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4df",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "REQ-MOB-02",
+      "title": "Doctor Push Notification & Mobile E-Sign",
+      "description": "Push notifications for doctor shift alerts and emergency consultations.",
+      "type": "Functional",
+      "priority": "Should have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Mobile App",
+      "changeRequestId": "6ae42451a3827fb3f34ef538",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.303Z",
+      "updatedAt": "2026-10-30T05:00:02.756Z",
+      "approvedAt": "2026-10-30T05:00:02.754Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef54a",
+      "projectId": "6ae42451a3827fb3f34ef544",
+      "code": "REQ-DENT-01",
+      "title": "Interactive 32-Tooth Odontogram Charting",
+      "description": "Visual dental diagram allowing dentists to mark cavities, crowns, and extractions per tooth surface.",
+      "type": "Functional",
+      "priority": "Must have",
+      "status": "Approved",
+      "source": "Hospital Management",
+      "deliverableCategory": "Clinical Charting",
+      "changeRequestId": null,
+      "createdAt": "2026-10-30T05:00:01.786Z",
+      "updatedAt": "2026-10-30T05:00:01.786Z",
+      "__v": 0
+    }
+  ],
+  "wbsNodes": [
+    {
+      "_id": "6ae42451a3827fb3f34ef4e1",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1",
+      "name": "Smart Healthcare PMS",
+      "parentId": null,
+      "level": 1,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "In Progress",
+      "createdAt": "2026-10-30T05:00:01.311Z",
+      "updatedAt": "2026-10-30T05:00:01.311Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4e3",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.1",
+      "name": "Patient Appointments Module",
+      "parentId": "6ae42451a3827fb3f34ef4e1",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "In Progress",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.328Z",
+      "updatedAt": "2026-10-30T05:00:01.328Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4e4",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.2",
+      "name": "Laboratory Reports Module",
+      "parentId": "6ae42451a3827fb3f34ef4e1",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "In Progress",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.329Z",
+      "updatedAt": "2026-10-30T05:00:01.329Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4e5",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.3",
+      "name": "Doctor Schedules Module",
+      "parentId": "6ae42451a3827fb3f34ef4e1",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "Not Started",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.329Z",
+      "updatedAt": "2026-10-30T05:00:01.329Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4e6",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.4",
+      "name": "Online Consultations Module",
+      "parentId": "6ae42451a3827fb3f34ef4e1",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "Not Started",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.329Z",
+      "updatedAt": "2026-10-30T05:00:01.329Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4e7",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.5",
+      "name": "Hospital Billing Module",
+      "parentId": "6ae42451a3827fb3f34ef4e1",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "Not Started",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.329Z",
+      "updatedAt": "2026-10-30T05:00:01.329Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4e8",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.6",
+      "name": "Testing, Security & Deployment",
+      "parentId": "6ae42451a3827fb3f34ef4e1",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "Not Started",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.329Z",
+      "updatedAt": "2026-10-30T05:00:01.329Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef546",
+      "projectId": "6ae42451a3827fb3f34ef544",
+      "code": "1",
+      "name": "Dental Clinic EHR System",
+      "parentId": null,
+      "level": 1,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.774Z",
+      "updatedAt": "2026-10-30T05:00:01.774Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef548",
+      "projectId": "6ae42451a3827fb3f34ef544",
+      "code": "1.1",
+      "name": "Odontogram & Dental Records Module",
+      "parentId": "6ae42451a3827fb3f34ef546",
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [],
+      "ownerId": null,
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.779Z",
+      "updatedAt": "2026-10-30T05:00:01.779Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42452a3827fb3f34ef5a2",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.7",
+      "name": "AI Preliminary Diagnosis Module",
+      "parentId": null,
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [
+        "6ae42451a3827fb3f34ef4dc",
+        "6ae42451a3827fb3f34ef4dd",
+        "6ae42451a3827fb3f34ef4de",
+        "6ae42451a3827fb3f34ef4df"
+      ],
+      "ownerId": null,
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:02.765Z",
+      "updatedAt": "2026-10-30T05:00:02.765Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42452a3827fb3f34ef5a5",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "1.8",
+      "name": "Mobile Application Portal",
+      "parentId": null,
+      "level": 2,
+      "type": "Deliverable",
+      "requirementIds": [
+        "6ae42451a3827fb3f34ef4dc",
+        "6ae42451a3827fb3f34ef4dd",
+        "6ae42451a3827fb3f34ef4de",
+        "6ae42451a3827fb3f34ef4df"
+      ],
+      "ownerId": null,
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:02.774Z",
+      "updatedAt": "2026-10-30T05:00:02.774Z",
+      "__v": 0
+    }
+  ],
+  "activities": [
+    {
+      "_id": "6ae42451a3827fb3f34ef4ea",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-001",
+      "name": "Appointments Architecture & Schema",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "assigneeId": "6ae42451a3827fb3f34ef4c3",
+      "durationDays": 5,
+      "predecessors": [],
+      "plannedStart": "2026-11-02",
+      "plannedFinish": "2026-11-06",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": "2026-11-02",
+      "actualFinish": "2026-11-06",
+      "percentComplete": 100,
+      "plannedCost": 200000,
+      "baselineVersion": "v1",
+      "status": "Completed",
+      "createdAt": "2026-10-30T05:00:01.337Z",
+      "updatedAt": "2026-10-30T05:00:02.844Z",
+      "__v": 0,
+      "earlyFinish": "2026-11-06",
+      "earlyStart": "2026-11-02",
+      "lateFinish": "2026-11-06",
+      "lateStart": "2026-11-02"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4ec",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-002",
+      "name": "Booking Engine REST API",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 10,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-001",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-11-09",
+      "plannedFinish": "2026-11-20",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": "2026-11-09",
+      "actualFinish": "2026-11-20",
+      "percentComplete": 100,
+      "plannedCost": 350000,
+      "baselineVersion": "v1",
+      "status": "Completed",
+      "createdAt": "2026-10-30T05:00:01.345Z",
+      "updatedAt": "2026-10-30T05:00:02.854Z",
+      "__v": 0,
+      "earlyFinish": "2026-11-20",
+      "earlyStart": "2026-11-09",
+      "lateFinish": "2026-11-20",
+      "lateStart": "2026-11-09"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4ee",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-003",
+      "name": "Patient Booking UI Portal",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-002",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-11-23",
+      "plannedFinish": "2026-12-02",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": "2026-11-23",
+      "actualFinish": "2026-12-02",
+      "percentComplete": 100,
+      "plannedCost": 250000,
+      "baselineVersion": "v1",
+      "status": "Completed",
+      "createdAt": "2026-10-30T05:00:01.356Z",
+      "updatedAt": "2026-10-30T05:00:02.858Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-02",
+      "earlyStart": "2026-11-23",
+      "lateFinish": "2026-12-02",
+      "lateStart": "2026-11-23"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4f0",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-004",
+      "name": "Multi-Branch Concurrency Testing",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "assigneeId": "6ae42451a3827fb3f34ef4c4",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-003",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-12-03",
+      "plannedFinish": "2026-12-14",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": "2026-12-05",
+      "actualFinish": null,
+      "percentComplete": 60,
+      "plannedCost": 250000,
+      "baselineVersion": "v1",
+      "status": "In Progress",
+      "createdAt": "2026-10-30T05:00:01.367Z",
+      "updatedAt": "2026-10-30T05:00:02.861Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-14",
+      "earlyStart": "2026-12-03",
+      "lateFinish": "2026-12-14",
+      "lateStart": "2026-12-03"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4f2",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-005",
+      "name": "Lab Test Catalog & Storage Engine",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e4",
+      "assigneeId": "6ae42451a3827fb3f34ef4c3",
+      "durationDays": 6,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-001",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-11-16",
+      "plannedFinish": "2026-11-23",
+      "totalFloat": 30,
+      "isCritical": false,
+      "actualStart": "2026-11-16",
+      "actualFinish": "2026-11-23",
+      "percentComplete": 100,
+      "plannedCost": 250000,
+      "baselineVersion": "v1",
+      "status": "Completed",
+      "createdAt": "2026-10-30T05:00:01.378Z",
+      "updatedAt": "2026-10-30T05:00:02.867Z",
+      "__v": 0,
+      "earlyFinish": "2026-11-16",
+      "earlyStart": "2026-11-09",
+      "lateFinish": "2026-12-28",
+      "lateStart": "2026-12-21"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4f4",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-006",
+      "name": "Lab Report Ingestion & PDF Parser",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e4",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 10,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-005",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-11-24",
+      "plannedFinish": "2026-12-07",
+      "totalFloat": 30,
+      "isCritical": false,
+      "actualStart": "2026-11-24",
+      "actualFinish": "2026-12-07",
+      "percentComplete": 100,
+      "plannedCost": 400000,
+      "baselineVersion": "v1",
+      "status": "Completed",
+      "createdAt": "2026-10-30T05:00:01.409Z",
+      "updatedAt": "2026-10-30T05:00:02.874Z",
+      "__v": 0,
+      "earlyFinish": "2026-11-30",
+      "earlyStart": "2026-11-17",
+      "lateFinish": "2027-01-11",
+      "lateStart": "2026-12-29"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4f6",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-007",
+      "name": "Doctor EHR Lab Viewing Screen",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e4",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-006",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-12-08",
+      "plannedFinish": "2026-12-17",
+      "totalFloat": 30,
+      "isCritical": false,
+      "actualStart": "2026-12-10",
+      "actualFinish": null,
+      "percentComplete": 75,
+      "plannedCost": 300000,
+      "baselineVersion": "v1",
+      "status": "In Progress",
+      "createdAt": "2026-10-30T05:00:01.422Z",
+      "updatedAt": "2026-10-30T05:00:02.884Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-10",
+      "earlyStart": "2026-12-01",
+      "lateFinish": "2027-01-21",
+      "lateStart": "2027-01-12"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4f8",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-008",
+      "name": "Doctor Roster & OPD Shift Engine",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e5",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-004",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-12-15",
+      "plannedFinish": "2026-12-24",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": "2026-12-18",
+      "actualFinish": null,
+      "percentComplete": 40,
+      "plannedCost": 350000,
+      "baselineVersion": "v1",
+      "status": "In Progress",
+      "createdAt": "2026-10-30T05:00:01.437Z",
+      "updatedAt": "2026-10-30T05:00:02.888Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-24",
+      "earlyStart": "2026-12-15",
+      "lateFinish": "2026-12-24",
+      "lateStart": "2026-12-15"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4fa",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-009",
+      "name": "Admin Shift Calendar Interface",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e5",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-008",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-12-25",
+      "plannedFinish": "2027-01-05",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 250000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.446Z",
+      "updatedAt": "2026-10-30T05:00:02.892Z",
+      "__v": 0,
+      "earlyFinish": "2027-01-05",
+      "earlyStart": "2026-12-25",
+      "lateFinish": "2027-01-05",
+      "lateStart": "2026-12-25"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4fc",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-010",
+      "name": "Doctor Leave & Emergency Reallocation",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e5",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 6,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-009",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-01-06",
+      "plannedFinish": "2027-01-13",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 200000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.455Z",
+      "updatedAt": "2026-10-30T05:00:02.895Z",
+      "__v": 0,
+      "earlyFinish": "2027-01-13",
+      "earlyStart": "2027-01-06",
+      "lateFinish": "2027-01-13",
+      "lateStart": "2027-01-06"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef4fe",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-011",
+      "name": "WebRTC Video Consultation Server",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e6",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 10,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-007",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2026-12-28",
+      "plannedFinish": "2027-01-08",
+      "totalFloat": 30,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 450000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.463Z",
+      "updatedAt": "2026-10-30T05:00:02.899Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-24",
+      "earlyStart": "2026-12-11",
+      "lateFinish": "2027-02-04",
+      "lateStart": "2027-01-22"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef500",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-012",
+      "name": "Interactive Patient-Doctor Video Room",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e6",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "durationDays": 7,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-011",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-01-11",
+      "plannedFinish": "2027-01-19",
+      "totalFloat": 30,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 250000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.472Z",
+      "updatedAt": "2026-10-30T05:00:02.903Z",
+      "__v": 0,
+      "earlyFinish": "2027-01-04",
+      "earlyStart": "2026-12-25",
+      "lateFinish": "2027-02-15",
+      "lateStart": "2027-02-05"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef502",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-013",
+      "name": "Digital Prescription Generator",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e6",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 6,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-012",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-01-20",
+      "plannedFinish": "2027-01-27",
+      "totalFloat": 30,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 200000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.481Z",
+      "updatedAt": "2026-10-30T05:00:02.907Z",
+      "__v": 0,
+      "earlyFinish": "2027-01-12",
+      "earlyStart": "2027-01-05",
+      "lateFinish": "2027-02-23",
+      "lateStart": "2027-02-16"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef504",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-014",
+      "name": "Billing Engine & Fee Calculations",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e7",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-010",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-01-14",
+      "plannedFinish": "2027-01-25",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 350000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.489Z",
+      "updatedAt": "2026-10-30T05:00:02.910Z",
+      "__v": 0,
+      "earlyFinish": "2027-01-25",
+      "earlyStart": "2027-01-14",
+      "lateFinish": "2027-01-25",
+      "lateStart": "2027-01-14"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef506",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-015",
+      "name": "Insurance Panel Verification Service",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e7",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "durationDays": 6,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-014",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-01-26",
+      "plannedFinish": "2027-02-02",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 220000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.498Z",
+      "updatedAt": "2026-10-30T05:00:02.914Z",
+      "__v": 0,
+      "earlyFinish": "2027-02-02",
+      "earlyStart": "2027-01-26",
+      "lateFinish": "2027-02-02",
+      "lateStart": "2027-01-26"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef508",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-016",
+      "name": "Invoice PDF & Payment Gateway UI",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e7",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "durationDays": 6,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-015",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-03",
+      "plannedFinish": "2027-02-10",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 180000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.507Z",
+      "updatedAt": "2026-10-30T05:00:02.919Z",
+      "__v": 0,
+      "earlyFinish": "2027-02-10",
+      "earlyStart": "2027-02-03",
+      "lateFinish": "2027-02-10",
+      "lateStart": "2027-02-03"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef50a",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-017",
+      "name": "End-to-End System Integration Testing",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e8",
+      "assigneeId": "6ae42451a3827fb3f34ef4c4",
+      "durationDays": 5,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-013",
+          "type": "FS",
+          "lagDays": 0
+        },
+        {
+          "activityId": null,
+          "code": "ACT-016",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-11",
+      "plannedFinish": "2027-02-17",
+      "totalFloat": 9,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 250000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.522Z",
+      "updatedAt": "2026-10-30T05:00:02.922Z",
+      "__v": 0,
+      "earlyFinish": "2027-02-17",
+      "earlyStart": "2027-02-11",
+      "lateFinish": "2027-03-02",
+      "lateStart": "2027-02-24"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef50c",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-018",
+      "name": "Hospital Network Deployment & Pilot Sign-off",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e8",
+      "assigneeId": "6ae42451a3827fb3f34ef4be",
+      "durationDays": 3,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-017",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-18",
+      "plannedFinish": "2027-02-20",
+      "totalFloat": 9,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 300000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.539Z",
+      "updatedAt": "2026-10-30T05:00:02.925Z",
+      "__v": 0,
+      "earlyFinish": "2027-02-22",
+      "earlyStart": "2027-02-18",
+      "lateFinish": "2027-03-05",
+      "lateStart": "2027-03-03"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef54c",
+      "projectId": "6ae42451a3827fb3f34ef544",
+      "code": "ACT-DENT-01",
+      "name": "Dental Charting UI & Schema Definition",
+      "wbsNodeId": "6ae42451a3827fb3f34ef548",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "durationDays": 10,
+      "predecessors": [],
+      "plannedStart": "2027-01-05",
+      "plannedFinish": "2027-01-16",
+      "totalFloat": 0,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 500000,
+      "baselineVersion": "v1",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:01.795Z",
+      "updatedAt": "2026-10-30T05:00:01.795Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42452a3827fb3f34ef5a8",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-AI-01",
+      "name": "AI Triage Model Integration & API",
+      "wbsNodeId": "6ae42452a3827fb3f34ef5a2",
+      "assigneeId": "6ae42451a3827fb3f34ef4bf",
+      "durationDays": 8,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-007",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-22",
+      "plannedFinish": "2027-02-22",
+      "totalFloat": 46,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 250000,
+      "baselineVersion": "v2",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:02.790Z",
+      "updatedAt": "2026-10-30T05:00:02.928Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-22",
+      "earlyStart": "2026-12-11",
+      "lateFinish": "2027-02-24",
+      "lateStart": "2027-02-15"
+    },
+    {
+      "_id": "6ae42452a3827fb3f34ef5ab",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-AI-02",
+      "name": "Physician AI Assist Interface",
+      "wbsNodeId": "6ae42452a3827fb3f34ef5a2",
+      "assigneeId": "6ae42451a3827fb3f34ef4c1",
+      "durationDays": 7,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-AI-01",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-22",
+      "plannedFinish": "2027-02-22",
+      "totalFloat": 46,
+      "isCritical": false,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 150000,
+      "baselineVersion": "v2",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:02.805Z",
+      "updatedAt": "2026-10-30T05:00:02.933Z",
+      "__v": 0,
+      "earlyFinish": "2026-12-31",
+      "earlyStart": "2026-12-23",
+      "lateFinish": "2027-03-05",
+      "lateStart": "2027-02-25"
+    },
+    {
+      "_id": "6ae42452a3827fb3f34ef5ae",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-MOB-01",
+      "name": "Mobile Patient Appointments & Lab App",
+      "wbsNodeId": "6ae42452a3827fb3f34ef5a2",
+      "assigneeId": "6ae42451a3827fb3f34ef4c1",
+      "durationDays": 10,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-016",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-22",
+      "plannedFinish": "2027-02-22",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 250000,
+      "baselineVersion": "v2",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:02.818Z",
+      "updatedAt": "2026-10-30T05:00:02.937Z",
+      "__v": 0,
+      "earlyFinish": "2027-02-24",
+      "earlyStart": "2027-02-11",
+      "lateFinish": "2027-02-24",
+      "lateStart": "2027-02-11"
+    },
+    {
+      "_id": "6ae42452a3827fb3f34ef5b1",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "ACT-MOB-02",
+      "name": "Doctor Mobile Alerts & Sign-off UI",
+      "wbsNodeId": "6ae42452a3827fb3f34ef5a2",
+      "assigneeId": "6ae42451a3827fb3f34ef4c1",
+      "durationDays": 7,
+      "predecessors": [
+        {
+          "activityId": null,
+          "code": "ACT-MOB-01",
+          "type": "FS",
+          "lagDays": 0
+        }
+      ],
+      "plannedStart": "2027-02-22",
+      "plannedFinish": "2027-02-22",
+      "totalFloat": 0,
+      "isCritical": true,
+      "actualStart": null,
+      "actualFinish": null,
+      "percentComplete": 0,
+      "plannedCost": 150000,
+      "baselineVersion": "v2",
+      "status": "Not Started",
+      "createdAt": "2026-10-30T05:00:02.835Z",
+      "updatedAt": "2026-10-30T05:00:02.940Z",
+      "__v": 0,
+      "earlyFinish": "2027-03-05",
+      "earlyStart": "2027-02-25",
+      "lateFinish": "2027-03-05",
+      "lateStart": "2027-02-25"
+    }
+  ],
+  "costEntries": [
+    {
+      "_id": "6ae42451a3827fb3f34ef520",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4ea",
+      "date": "2026-11-06",
+      "amount": 210000,
+      "category": "Labour",
+      "note": "Architecture database modeling",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.655Z",
+      "updatedAt": "2026-10-30T05:00:01.655Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef521",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4ec",
+      "date": "2026-11-20",
+      "amount": 375000,
+      "category": "Labour",
+      "note": "Booking REST API development",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.655Z",
+      "updatedAt": "2026-10-30T05:00:01.655Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef522",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4ee",
+      "date": "2026-12-02",
+      "amount": 265000,
+      "category": "Labour",
+      "note": "Patient Booking UI components",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.655Z",
+      "updatedAt": "2026-10-30T05:00:01.655Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef523",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4f0",
+      "date": "2026-12-14",
+      "amount": 320000,
+      "category": "Labour",
+      "note": "Load and concurrency testing overtime",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.655Z",
+      "updatedAt": "2026-10-30T05:00:01.655Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef524",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4f2",
+      "date": "2026-11-23",
+      "amount": 260000,
+      "category": "Labour",
+      "note": "Lab storage engine configuration",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.656Z",
+      "updatedAt": "2026-10-30T05:00:01.656Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef525",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4f4",
+      "date": "2026-12-07",
+      "amount": 430000,
+      "category": "Labour",
+      "note": "HL7 ingestion parser development",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.656Z",
+      "updatedAt": "2026-10-30T05:00:01.656Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef526",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4f6",
+      "date": "2026-12-18",
+      "amount": 290000,
+      "category": "Labour",
+      "note": "Doctor viewing screen styling",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.656Z",
+      "updatedAt": "2026-10-30T05:00:01.656Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef527",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4f8",
+      "date": "2026-12-24",
+      "amount": 240000,
+      "category": "Labour",
+      "note": "Doctor schedule initial algorithms",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.656Z",
+      "updatedAt": "2026-10-30T05:00:01.656Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef528",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4ec",
+      "date": "2026-11-15",
+      "amount": 260000,
+      "category": "Infrastructure",
+      "note": "Cloud cluster provisioning for testing",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.656Z",
+      "updatedAt": "2026-10-30T05:00:01.656Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef529",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "activityId": "6ae42451a3827fb3f34ef4f4",
+      "date": "2026-12-01",
+      "amount": 200000,
+      "category": "Licence",
+      "note": "Medical imaging and PDF SDK licence",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.656Z",
+      "updatedAt": "2026-10-30T05:00:01.656Z"
+    }
+  ],
+  "changeRequests": [
+    {
+      "_id": "6ae42451a3827fb3f34ef538",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "CR-001",
+      "title": "Hospital Management Expansion: AI Diagnosis Module & Mobile Application",
+      "description": "During development, hospital consortium management requested two major enhancements: an AI-based preliminary diagnosis module to assist triage, and a cross-platform mobile application for patients and doctors.",
+      "justification": "Hospital management determined that mobile access is essential for patient adoption, and AI preliminary triaging significantly reduces doctor OPD burden by 30%.",
+      "requestedBy": "Hospital Consortium Executive Board",
+      "costImpact": 800000,
+      "scheduleImpactDays": 15,
+      "scopeImpact": "Addition of Deliverable 1.7 (AI Preliminary Diagnosis) and Deliverable 1.8 (Mobile Application) with 4 new requirements and 4 new work activities.",
+      "proposedRequirements": [
+        {
+          "code": "REQ-AI-01",
+          "title": "AI Symptom Triage Classifier",
+          "description": "Deep learning risk triaging based on patient-reported vitals and symptoms.",
+          "type": "Functional",
+          "priority": "Could have",
+          "deliverableCategory": "AI Diagnosis",
+          "_id": "6ae42451a3827fb3f34ef539"
+        },
+        {
+          "code": "REQ-AI-02",
+          "title": "Doctor Differential Diagnosis Assistant",
+          "description": "Clinical decision support panel displaying potential diagnostic indicators.",
+          "type": "Functional",
+          "priority": "Could have",
+          "deliverableCategory": "AI Diagnosis",
+          "_id": "6ae42451a3827fb3f34ef53a"
+        },
+        {
+          "code": "REQ-MOB-01",
+          "title": "Native iOS & Android Patient Appointment Portal",
+          "description": "Cross-platform mobile app for booking, tele-health, and viewing lab records.",
+          "type": "Functional",
+          "priority": "Should have",
+          "deliverableCategory": "Mobile App",
+          "_id": "6ae42451a3827fb3f34ef53b"
+        },
+        {
+          "code": "REQ-MOB-02",
+          "title": "Doctor Push Notification & Mobile E-Sign",
+          "description": "Push notification alerts for critical lab results and emergency appointments.",
+          "type": "Functional",
+          "priority": "Should have",
+          "deliverableCategory": "Mobile App",
+          "_id": "6ae42451a3827fb3f34ef53c"
+        }
+      ],
+      "proposedDeliverables": [
+        {
+          "code": "1.7",
+          "name": "AI Preliminary Diagnosis Module",
+          "description": "AI diagnostic assistance and symptom triaging engine",
+          "_id": "6ae42451a3827fb3f34ef53d"
+        },
+        {
+          "code": "1.8",
+          "name": "Mobile Application Portal",
+          "description": "iOS and Android client applications for patients and physicians",
+          "_id": "6ae42451a3827fb3f34ef53e"
+        }
+      ],
+      "proposedActivities": [
+        {
+          "code": "ACT-AI-01",
+          "name": "AI Triage Model Integration & API",
+          "durationDays": 8,
+          "plannedCost": 250000,
+          "predecessorCode": "ACT-007",
+          "roleNeeded": "Backend Developer",
+          "_id": "6ae42451a3827fb3f34ef53f"
+        },
+        {
+          "code": "ACT-AI-02",
+          "name": "Physician AI Assist Interface",
+          "durationDays": 7,
+          "plannedCost": 150000,
+          "predecessorCode": "ACT-AI-01",
+          "roleNeeded": "Frontend Developer",
+          "_id": "6ae42451a3827fb3f34ef540"
+        },
+        {
+          "code": "ACT-MOB-01",
+          "name": "Mobile Patient Appointments & Lab App",
+          "durationDays": 10,
+          "plannedCost": 250000,
+          "predecessorCode": "ACT-016",
+          "roleNeeded": "Frontend Developer",
+          "_id": "6ae42451a3827fb3f34ef541"
+        },
+        {
+          "code": "ACT-MOB-02",
+          "name": "Doctor Mobile Alerts & Sign-off UI",
+          "durationDays": 7,
+          "plannedCost": 150000,
+          "predecessorCode": "ACT-MOB-01",
+          "roleNeeded": "Frontend Developer",
+          "_id": "6ae42451a3827fb3f34ef542"
+        }
+      ],
+      "status": "Implemented",
+      "decisionBy": "Change Control Board",
+      "decisionAt": "2026-10-30T05:00:02.997Z",
+      "decisionNote": "Sponsor approval test",
+      "impactSnapshot": {
+        "analyzedAt": "2026-10-30T05:00:02.709Z",
+        "before": {
+          "requirementsCount": 18,
+          "wbsCount": 7,
+          "activitiesCount": 18,
+          "bac": 5000000,
+          "finishDate": "2027-02-22",
+          "criticalPath": [
+            "ACT-001",
+            "ACT-002",
+            "ACT-003",
+            "ACT-004",
+            "ACT-008",
+            "ACT-009",
+            "ACT-010",
+            "ACT-014",
+            "ACT-015",
+            "ACT-016",
+            "ACT-017",
+            "ACT-018"
+          ],
+          "deadlineExceeded": true
+        },
+        "after": {
+          "requirementsCount": 22,
+          "wbsCount": 9,
+          "activitiesCount": 22,
+          "bac": 5800000,
+          "finishDate": "2027-02-22",
+          "criticalPath": [
+            "ACT-001",
+            "ACT-002",
+            "ACT-003",
+            "ACT-004",
+            "ACT-008",
+            "ACT-009",
+            "ACT-010",
+            "ACT-014",
+            "ACT-015",
+            "ACT-016",
+            "ACT-017",
+            "ACT-018"
+          ],
+          "deadlineExceeded": true
+        },
+        "delta": {
+          "additionalRequirements": 4,
+          "additionalActivities": 4,
+          "costImpact": 800000,
+          "scheduleDaysDelta": 0,
+          "budgetCapExceeded": true,
+          "budgetCapVariance": 800000,
+          "requiresSponsorApproval": true
+        },
+        "narrative": [
+          "Scope expands by 4 requirements and 4 activities.",
+          "Budget increases by PKR 800,000 (Total BAC: PKR 5,800,000). Exceeds original approved budget cap of PKR 5,000,000 by PKR 800,000 (requires formal sponsor budget amendment).",
+          "Schedule extends by 0 working days, moving projected finish from 2027-02-22 to 2027-02-22."
+        ]
+      },
+      "createdAt": "2026-10-30T05:00:01.746Z",
+      "updatedAt": "2026-10-30T05:00:03.020Z",
+      "__v": 0
+    }
+  ],
+  "defects": [
+    {
+      "_id": "6ae42451a3827fb3f34ef52b",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "DEF-001",
+      "title": "Race condition causes appointment double-booking during peak hours",
+      "description": "When two hospital receptionists simultaneously book the same doctor slot, both bookings succeed due to lack of distributed optimistic locking.",
+      "severity": "Critical",
+      "status": "Open",
+      "assigneeId": "6ae42451a3827fb3f34ef4c0",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "foundInPhase": "Concurrency Load Testing",
+      "reportedAt": "2026-12-15T00:00:00.000Z",
+      "resolvedAt": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.668Z",
+      "updatedAt": "2026-10-30T05:00:01.668Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef52c",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "DEF-002",
+      "title": "Patient medical record (EHR) corruption on concurrent lab upload",
+      "description": "Concurrent multipart laboratory PDF uploads intermittently overwrite previous doctor diagnostic notes in the patient history collection.",
+      "severity": "Critical",
+      "status": "In Progress",
+      "assigneeId": "6ae42451a3827fb3f34ef4c3",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e4",
+      "foundInPhase": "Integration Testing",
+      "reportedAt": "2026-12-18T00:00:00.000Z",
+      "resolvedAt": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.668Z",
+      "updatedAt": "2026-10-30T05:00:01.668Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef52d",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "DEF-003",
+      "title": "Doctor availability slot calculation timezone mismatch",
+      "description": "Branch doctors in different timezones display 1-hour slot shift in admin calendar.",
+      "severity": "Major",
+      "status": "In Progress",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e5",
+      "foundInPhase": "System Testing",
+      "reportedAt": "2026-12-22T00:00:00.000Z",
+      "resolvedAt": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.668Z",
+      "updatedAt": "2026-10-30T05:00:01.668Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef52e",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "DEF-004",
+      "title": "Hospital invoice printable PDF column misalignment",
+      "description": "Minor overflow of tax itemization text on 80mm receipt printers.",
+      "severity": "Minor",
+      "status": "Resolved",
+      "assigneeId": "6ae42451a3827fb3f34ef4c2",
+      "wbsNodeId": "6ae42451a3827fb3f34ef4e7",
+      "foundInPhase": "UI Verification",
+      "reportedAt": "2026-12-10T00:00:00.000Z",
+      "resolvedAt": "2026-12-14T00:00:00.000Z",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.668Z",
+      "updatedAt": "2026-10-30T05:00:01.668Z"
+    }
+  ],
+  "qualityInspections": [
+    {
+      "_id": "6ae42451a3827fb3f34ef530",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "deliverableId": "6ae42451a3827fb3f34ef4e3",
+      "inspector": "Zainab Qureshi (QA Lead)",
+      "inspectionDate": "2026-12-20",
+      "phase": "Deliverable 1.1 Acceptance Gate",
+      "items": [
+        {
+          "item": "Zero double-booking occurrences under 100 concurrent requests",
+          "mandatory": true,
+          "passed": false,
+          "remarks": "Failed: DEF-001 active race condition"
+        },
+        {
+          "item": "SMS and email notifications dispatched within 5 seconds",
+          "mandatory": true,
+          "passed": true,
+          "remarks": "Verified with Twilio/SendGrid mock"
+        },
+        {
+          "item": "Patient appointment history pagination loads in < 500ms",
+          "mandatory": false,
+          "passed": true,
+          "remarks": "Indexed on patientId and date"
+        },
+        {
+          "item": "Role-based access check on cancellation endpoint",
+          "mandatory": true,
+          "passed": true,
+          "remarks": "Tested with PM, Doctor, Patient tokens"
+        }
+      ],
+      "overallStatus": "Failed",
+      "notes": "Blocked by open Critical defect DEF-001. Requires database transaction lock before quality sign-off.",
+      "createdAt": "2026-10-30T05:00:01.683Z",
+      "updatedAt": "2026-10-30T05:00:01.683Z",
+      "__v": 0
+    }
+  ],
+  "risks": [
+    {
+      "_id": "6ae42451a3827fb3f34ef532",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "RSK-001",
+      "description": "Appointment concurrency race condition causes patient conflict in hospital OPD",
+      "category": "Quality",
+      "likelihood": 5,
+      "impact": 5,
+      "score": 25,
+      "band": "HIGH",
+      "rank": 1,
+      "owner": "Backend Lead",
+      "status": "Active",
+      "preventiveAction": "Implement Redis distributed lock and MongoDB optimistic concurrency versioning (__v).",
+      "correctiveAction": "Auto-rollback overlapping transaction and offer alternate immediate slot with priority badge.",
+      "linkedWbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.705Z",
+      "updatedAt": "2026-10-30T05:00:01.705Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef533",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "RSK-002",
+      "description": "Patient medical record corruption during high-volume lab result imports",
+      "category": "Quality",
+      "likelihood": 4,
+      "impact": 5,
+      "score": 20,
+      "band": "HIGH",
+      "rank": 2,
+      "owner": "Database Developer",
+      "status": "Active",
+      "preventiveAction": "Enforce atomic updates using $push with idempotency keys on all lab upload streams.",
+      "correctiveAction": "Trigger automated data integrity checksum and restore prior patient snapshot from point-in-time backup.",
+      "linkedWbsNodeId": "6ae42451a3827fb3f34ef4e4",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.705Z",
+      "updatedAt": "2026-10-30T05:00:01.705Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef534",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "RSK-003",
+      "description": "Schedule slippage in Appointment module cascades to Doctor Shifts and Billing",
+      "category": "Schedule",
+      "likelihood": 4,
+      "impact": 4,
+      "score": 16,
+      "band": "HIGH",
+      "rank": 3,
+      "owner": "Project Manager",
+      "status": "Active",
+      "preventiveAction": "Fast-track non-critical frontend tasks and parallelize independent billing schema design.",
+      "correctiveAction": "Authorize overtime for backend engineers and negotiate CR-001 schedule buffer extension.",
+      "linkedWbsNodeId": "6ae42451a3827fb3f34ef4e3",
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.705Z",
+      "updatedAt": "2026-10-30T05:00:01.705Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef535",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "RSK-004",
+      "description": "Cost overrun due to unexpected cloud infrastructure scaling and SDK licenses",
+      "category": "Cost",
+      "likelihood": 3,
+      "impact": 4,
+      "score": 12,
+      "band": "MEDIUM",
+      "rank": 4,
+      "owner": "Project Manager",
+      "status": "Active",
+      "preventiveAction": "Establish automated cloud spending alarms and reserve instances for 12 months.",
+      "correctiveAction": "Reallocate management reserve from contingency budget and re-negotiate vendor tier.",
+      "linkedWbsNodeId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.705Z",
+      "updatedAt": "2026-10-30T05:00:01.705Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef536",
+      "projectId": "6ae42451a3827fb3f34ef4c6",
+      "code": "RSK-005",
+      "description": "Doctor resistance to digital tele-consultation and shift reassignments",
+      "category": "Resource",
+      "likelihood": 3,
+      "impact": 3,
+      "score": 9,
+      "band": "MEDIUM",
+      "rank": 5,
+      "owner": "Chief Medical Officer",
+      "status": "Active",
+      "preventiveAction": "Conduct hands-on interactive training workshops for hospital department heads.",
+      "correctiveAction": "Provide designated hospital tech liaison in OPD to assist doctors during first 2 weeks.",
+      "linkedWbsNodeId": null,
+      "__v": 0,
+      "createdAt": "2026-10-30T05:00:01.705Z",
+      "updatedAt": "2026-10-30T05:00:01.705Z"
+    },
+    {
+      "_id": "6ae42451a3827fb3f34ef54e",
+      "projectId": "6ae42451a3827fb3f34ef544",
+      "code": "RSK-DENT-01",
+      "description": "Browser latency issues with high-resolution digital X-ray dental imaging",
+      "category": "Technical",
+      "likelihood": 3,
+      "impact": 4,
+      "score": 12,
+      "band": "MEDIUM",
+      "rank": 1,
+      "owner": "Project Manager",
+      "status": "Active",
+      "preventiveAction": "Use lightweight HTML5 Canvas DICOM image rendering engine with client-side compression.",
+      "correctiveAction": "Provide fallback server-side PNG rendering for low-spec clinic reception computers.",
+      "linkedWbsNodeId": null,
+      "createdAt": "2026-10-30T05:00:01.805Z",
+      "updatedAt": "2026-10-30T05:00:01.805Z",
+      "__v": 0
+    }
+  ],
+  "auditLogs": [
+    {
+      "_id": "6ae42453a3827fb3f34ef5cb",
+      "entity": "ChangeRequest",
+      "entityId": "6ae42451a3827fb3f34ef538",
+      "action": "APPROVE_CHANGE_REQUEST",
+      "actor": "Project Manager",
+      "before": null,
+      "after": {
+        "changeRequest": "CR-001",
+        "newBaseline": "v2",
+        "newBudget": 5800000,
+        "newDeadline": "2027-02-22"
+      },
+      "timestamp": "2026-10-30T05:00:03.026Z",
+      "__v": 0
+    },
+    {
+      "_id": "6ae42453a3827fb3f34ef5d2",
+      "entity": "Project",
+      "entityId": "6ae42453a3827fb3f34ef5d0",
+      "action": "CREATE_PROJECT",
+      "actor": "Project Manager",
+      "before": null,
+      "after": {
+        "name": "Fintech Mobile Banking App",
+        "code": "PRJ-FINTECH",
+        "description": "Enterprise software project managed in SPM",
+        "status": "Planning",
+        "statusDate": "2026-10-30",
+        "charter": {
+          "objectives": [
+            "Successfully deliver project scope on schedule and within budget"
+          ],
+          "stakeholders": [
+            {
+              "name": "Islamic Financial Services Group",
+              "role": "Project Sponsor",
+              "influence": "High",
+              "interest": "High"
+            }
+          ],
+          "scopeIn": [
+            "Core software modules architecture and implementation",
+            "System testing and release deployment"
+          ],
+          "scopeOut": [
+            "Client on-premise third-party hardware maintenance"
+          ],
+          "approvedBudget": 6000000,
+          "deadline": "2027-08-31",
+          "startDate": "2026-10-30",
+          "sponsor": "Islamic Financial Services Group"
+        },
+        "plan": {
+          "scopeStatement": "Development and deployment of Fintech Mobile Banking App",
+          "scheduleSummary": "Structured iterative development lifecycle",
+          "costPlan": {
+            "bac": 6000000,
+            "authorizedBudget": 6000000
+          },
+          "qualityPlan": {
+            "standards": [
+              "ISO/IEC 25010 Software Quality Standards"
+            ],
+            "defectPolicy": "Zero critical defects permitted at release gates"
+          }
+        },
+        "thresholds": {
+          "cpiWarning": 0.95,
+          "cpiCritical": 0.85,
+          "spiWarning": 0.95,
+          "spiCritical": 0.85,
+          "maxOpenCriticalDefects": 0
+        },
+        "baselines": [
+          {
+            "version": "v1",
+            "budget": 6000000,
+            "finishDate": "2027-08-31",
+            "createdFromChangeRequest": null,
+            "createdAt": "2026-10-30T05:00:03.177Z"
+          }
+        ],
+        "closure": {
+          "isClosed": false,
+          "lessonsLearned": "",
+          "checklist": []
+        },
+        "_id": "6ae42453a3827fb3f34ef5d0",
+        "createdAt": "2026-10-30T05:00:03.195Z",
+        "updatedAt": "2026-10-30T05:00:03.195Z",
+        "__v": 0
+      },
+      "timestamp": "2026-10-30T05:00:03.200Z",
+      "__v": 0
+    }
+  ]
+}
